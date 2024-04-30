@@ -1,0 +1,1434 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+/* Navbar Styles */
+.container {
+    width: 100%;
+}
+.m-auto {
+    margin: auto;
+}
+.bgcolor2 {
+    background-color: #f2f2f2;
+}
+.nav {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLeft,
+.navRight {
+    display: flex;
+    align-items: center;
+    padding: 0.85rem 0;
+}
+
+.navLeft div:first-child,
+.navRight div:first-child {
+    margin-right: 1.5rem;
+}
+
+.navLeft div,
+.navRight div {
+    display: flex;
+    align-items: center;
+}
+
+.navRight span,
+.navLeft span,
+.car,
+a,
+div h2 {
+    color: #d81324;
+}
+
+div span {
+    margin-right: 0.9rem;
+}
+
+div p {
+    color: #596277;
+}
+
+.navRight div a:nth-child(1),
+.navRight div a:nth-child(2),
+.navRight div a:nth-child(3) {
+    margin-right: 3px;
+}
+
+div a {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Lower Navbar */
+
+.container .lowerNav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin-left: 4.2rem;
+}
+.logo h2 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lowerNavRight {
+    display: flex;
+}
+
+.lowerNavRight ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    text-align: end;
+}
+
+.lowerNavRight ul li:nth-child(1),
+.lowerNavRight ul li:nth-child(2),
+.lowerNavRight ul li:nth-child(3),
+.lowerNavRight ul li:nth-child(4),
+.lowerNavRight ul li:nth-child(5) {
+    margin-right: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.quote a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d81324;
+    font-weight: 700;
+    margin-right: 0px !important;
+
+    width: 12rem;
+    height: 4.5rem;
+    padding: 0rem 2rem;
+    border-radius: 0;
+}
+
+/* TOGGLE NAVBAR */
+.displayContainer {
+    display: none;
+    margin: auto;
+}
+.displayContainer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    padding: 1rem 0rem;
+}
+.displayContainer .menu {
+    padding: 0.5rem 1.2rem;
+    margin-right: 4rem;
+    border: solid 3px #8a8a8a;
+    cursor: pointer;
+}
+
+/* TOGGLE MENU */
+.navMenu {
+    display: none;
+}
+.navMenuHide {
+    display: none;
+}
+
+/* Hero Carousel Styles */
+
+.hero_section1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("./assets/carousel-bg-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.hero_section2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("./assets/carousel-bg-2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel1 {
+    width: 80rem;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.leftCarousel {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.leftCarousel h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Learn More Button */
+.leftCarousel a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    background-color: #d81324;
+    color: #fff;
+    border-radius: 0px;
+    padding: 1rem 2.5rem;
+}
+
+/* Read More Button */
+.readMoreButton {
+    max-width: 11.6rem;
+    height: auto;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    background-color: #d81324;
+    color: #fff;
+    border-radius: 0px;
+    padding: 1rem 2rem;
+}
+
+.rightCarousel {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.rightCarousel img {
+    width: 84%;
+}
+
+/* Features Styles */
+
+.features {
+    width: 70vw;
+    margin: 5rem auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature-item {
+    flex-grow: 1;
+    display: flex;
+    padding: 3rem 2.4rem;
+    /* width: 100%; */
+    min-width: 26.25rem;
+}
+
+.feature-item span {
+    font-size: 1.5rem;
+    color: #d81324;
+}
+
+.feature-item h3 {
+    font-size: 1.1rem;
+}
+
+.feature-item p {
+    margin: 1rem 0rem;
+}
+
+.feature-item a {
+    color: #596277;
+    width: 5.35rem;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.feature2 {
+    background-color: #f2f2f2;
+}
+
+/* About Us Section */
+.aboutUsSection {
+    width: 80rem;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 3rem; */
+    padding-bottom: 3rem;
+}
+.about-img {
+    position: relative;
+    padding: 1.8rem;
+}
+
+.aboutSection-text {
+    padding: 0rem 1.5rem;
+    /* min-width: 38.75rem; */
+}
+
+.aboutSection-text h4 {
+    color: #d81324;
+}
+.aboutSection-text h2 {
+    font-size: 2.1rem;
+    color: #0b2154;
+    margin: 1.6rem 0rem;
+}
+.aboutSection-text p {
+    margin-bottom: 1.6rem;
+}
+.aboutSection-text h2 span {
+    font-family: "Permanent Marker", cursive;
+
+    font-weight: 400;
+    font-style: normal;
+    color: #d81324;
+}
+
+.abs-texts {
+    color: #fff;
+    background-color: #7a7a7a5d;
+    position: absolute;
+    padding: 2rem 3rem;
+    top: 0;
+    right: 0;
+}
+.abs-texts h3 {
+    font-size: 2.8rem;
+    display: inline;
+}
+.abs-texts h4 {
+    font-size: 1.2rem;
+}
+.parent-expert {
+    margin-bottom: 3.5rem;
+}
+.aboutSection-text .expert {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.aboutSection-text .expert h3 {
+    padding: 0.7rem 1rem;
+    background-color: #7a7a7a5d;
+}
+.aboutSection-text .expert p {
+    margin-bottom: 0rem;
+}
+
+/* Counter */
+.counter {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./assets/carousel-bg-1.jpg);
+    height: 25vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 5rem;
+}
+/* .counter .wid {
+    width: 50rem;
+} */
+.counter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.counter div span {
+    font-size: 2rem;
+}
+.counter div span,
+.counter div h2,
+.counter div p {
+    color: #fff;
+}
+.counter div span:nth-child(1) {
+    margin-left: 1rem;
+}
+
+/* ServicesSection */
+.servicesSection {
+    width: 78rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.servicesTitle {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.servicesTitle h4 {
+    color: #d81324;
+    margin-bottom: 1rem;
+}
+.servicesTitle h2 {
+    color: #0b2154;
+    font-size: 2.3rem;
+}
+.servicesChoices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.services {
+    display: flex;
+    align-items: start;
+
+    flex-direction: column;
+}
+
+.services .service {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: #0b2154;
+    width: 95%;
+    padding: 0.8rem 1rem;
+    margin: 0rem 1rem 2rem 0rem;
+}
+.services .service h3 {
+    margin-left: 0.5rem;
+}
+.services .active {
+    background-color: #d81324;
+    color: #fff;
+}
+.services .service span {
+    font-size: 2rem;
+}
+.services .service h3 {
+    font-size: 1.5rem;
+}
+.servicesIMG img {
+    width: 25rem;
+    aspect-ratio: 1/1;
+}
+.serviceDescription h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.serviceDescription > p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+.serviceChecks {
+    margin-bottom: 2rem;
+}
+.serviceCheck {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+.serviceCheck span {
+    color: #198754;
+    font-size: 1.2rem;
+}
+
+/* BOOKING */
+.bookService {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./assets/carousel-bg-2.jpg);
+    background-position: center;
+    margin-bottom: 5rem;
+}
+.bookServiceFlex {
+    width: 80rem;
+    height: 47.5vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookText {
+    padding: 1rem;
+    flex-basis: 50%;
+}
+.bookText h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.bookText h2,
+.bookText p {
+    color: #fff;
+}
+.bookForm {
+    margin: 0rem 1rem;
+
+    flex-basis: 50%;
+    background-color: #d81324;
+    padding: 3rem;
+    height: 100%;
+}
+.bookForm h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.bookForm form {
+    display: grid;
+    align-items: center;
+    place-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+.form1,
+.form2,
+.form3,
+.form4 {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    color: #596277;
+}
+.form5 {
+    width: 100%;
+    grid-column: 1/3;
+    padding: 0.8rem 1.2rem;
+}
+.bookForm form button {
+    grid-column: 1/3;
+    padding: 1rem 0rem;
+    background-color: #0b2154;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+/* Technician */
+.techSection {
+    text-align: center;
+    width: 80rem;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+.techSection > div {
+    margin-bottom: 2.4rem;
+}
+.techSection > div h4 {
+    color: #d81324;
+    margin-bottom: 0.6rem;
+}
+.techSection > div h2 {
+    color: #0b2154;
+    font-size: 2.3rem;
+}
+.technicians {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.technicians .profile {
+    background-color: #ececec;
+}
+.technicians .profile h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0b2154;
+}
+.technicians .profile p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+}
+.technicians .profile .details {
+    padding: 1rem 0rem;
+}
+.technician img {
+    width: 100%;
+}
+.technicians .profile .socials {
+    position: relative;
+}
+.hoverBG {
+    background-color: #d81324;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    /* display: none; */
+}
+.hoverBG span {
+    background-color: #ececec;
+    color: #d81324;
+
+    margin-right: 0rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.technician:hover .hoverBG {
+    transition: 0.8s;
+    transform: scale(100%);
+}
+.hoverBG span:hover,
+.hoverBG a:hover {
+    background-color: #0b2154;
+    color: #fff;
+    transition: 1s;
+}
+
+.hoverBG span:hover a,
+.hoverBG a:hover span {
+    background-color: #0b2154;
+    color: #fff;
+    transition: 1s;
+}
+
+/* Testemonials */
+.testimonials {
+    margin-bottom: 5rem;
+    width: 100%;
+    text-align: center;
+}
+.swipeContainer {
+    width: 80rem;
+    margin: auto;
+}
+
+.testimonials > div {
+    margin-bottom: 2rem;
+}
+.testimonials > div h4 {
+    color: #d81324;
+    margin-bottom: 0.6rem;
+}
+.testimonials > div h2 {
+    color: #0b2154;
+    font-size: 2.3rem;
+}
+
+.person {
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto 0 auto;
+}
+.person img {
+    width: 5rem;
+    padding: 0.5rem;
+    background-color: #ececec;
+    border-radius: 50%;
+}
+.person > div h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0b2154;
+}
+.person > div p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.person > p {
+    margin-top: 1rem;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    background-color: #d81324;
+    color: #fff;
+    max-width: 30rem;
+    margin: 1rem auto 0rem auto;
+}
+/* Footer */
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(./assets/carousel-bg-1.jpg);
+    background-position: center;
+    color: #fff;
+}
+.subFooter {
+    width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.address h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.contactInfo {
+    margin-bottom: 1rem;
+}
+.address .contactInfo div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+.address .contactInfo div span {
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.address .contactInfo div h5 {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.socialIcons span {
+    margin-right: 0rem;
+    font-size: 1.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.openingHours > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.openingHours > div {
+    margin-bottom: 1.5rem;
+}
+.openingHours div h4 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.openingHours div p {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footerServices > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.footerServices .servicesLink a {
+    margin-bottom: -0.3rem;
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    background-color: transparent;
+    text-decoration: none;
+    color: #ffff;
+}
+.footerServices .servicesLink a:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.newsLetter > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.newsLetter p {
+    font-size: 0.95rem;
+    margin-bottom: 1.3rem;
+    color: #fff;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container input[type="email"] {
+    padding: 0.7rem 1rem;
+    width: 100%;
+}
+
+.input-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.3rem 0.5rem;
+    background-color: #d81324;
+    color: #fff;
+    font-weight: 600;
+    margin: 6px;
+}
+
+.mainFooter {
+    width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #797979;
+    padding: 1.5rem 0;
+}
+@media (max-width: 1342px) {
+    .carousel1 {
+        width: 90%;
+        height: 80vh;
+    }
+    .leftCarousel {
+        gap: 2rem;
+    }
+    .leftCarousel h1 {
+        font-size: 3rem;
+        margin-bottom: 1.8rem;
+    }
+    .rightCarousel img {
+        width: 90%;
+    }
+    .rightCarousel {
+        justify-content: center;
+    }
+    .aboutUsSection {
+        width: 68rem;
+    }
+    .bookServiceFlex {
+        width: 68rem;
+        height: auto;
+    }
+    .techSection {
+        width: 68rem;
+    }
+    .swipeContainer {
+        width: 70%;
+    }
+    .subFooter {
+        width: 68rem;
+    }
+    .mainFooter {
+        width: 68rem;
+    }
+}
+@media (max-width: 1139px) {
+    .techSection {
+        width: 58rem;
+    }
+    .subFooter {
+        width: 60rem;
+    }
+    .mainFooter {
+        width: 60rem;
+    }
+}
+@media (max-width: 1285px) {
+    .carousel1 {
+        width: 90%;
+        height: 70vh;
+    }
+    .leftCarousel {
+        gap: 1.7rem;
+    }
+    .leftCarousel h1 {
+        font-size: 2.7rem;
+        margin-bottom: 1.6rem;
+    }
+    .rightCarousel img {
+        width: 80%;
+        margin-right: 2rem;
+    }
+    .aboutUsSection {
+        width: 65rem;
+    }
+    /* Service Section */
+    .servicesChoices {
+        gap: 1rem;
+    }
+    .servicesSection {
+        width: 68rem;
+    }
+    .servicesIMG img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .servicesTitle {
+        text-align: center;
+        margin-bottom: 0rem;
+    }
+    .servicesTitle h4 {
+        color: #d81324;
+        margin-bottom: 0.5rem;
+    }
+    .servicesChoices {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .servicesChoices .services:nth-child(1) {
+        grid-column: 1/3;
+    }
+    .services {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .services .service {
+        width: 100%;
+    }
+    .services .service {
+        margin-right: 0rem;
+    }
+    .services .service:last-child {
+        margin-bottom: 0rem;
+    }
+}
+@media (max-width: 1085px) {
+    .servicesSection {
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+        width: 56rem;
+    }
+    .servicesTitle h2 {
+        font-size: 2rem;
+    }
+    .bookServiceFlex {
+        width: 95%;
+        height: auto;
+    }
+}
+@media (max-width: 1045px) {
+    .aboutUsSection {
+        width: 60rem;
+    }
+    .aboutUsSection {
+        width: 80%;
+        margin: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .abs-texts {
+        width: 25%;
+        padding: 1.5rem 2rem;
+    }
+    .abs-texts h3 {
+        font-size: 2rem;
+        display: inline;
+    }
+    .abs-texts h4 {
+        font-size: 1rem;
+    }
+    .about-img img {
+        width: 100%;
+    }
+    .aboutSection-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form1,
+    .form2,
+    .form3,
+    .form4 {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.8rem;
+    }
+    .form5 {
+        padding: 0.5rem 0.9rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .carousel1 {
+        width: 90%;
+        height: 60vh;
+    }
+    .rightCarousel {
+        display: none;
+    }
+    .leftCarousel h1 {
+        font-size: 2.6rem;
+        margin-bottom: 1.6rem;
+    }
+    .leftCarousel {
+        flex-basis: 70%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .abs-texts {
+        width: 27%;
+        padding: 1.5rem 2rem;
+    }
+
+    .parent-expert {
+        margin-bottom: 1rem;
+    }
+    .aboutSection-text h2 {
+        font-size: 1.9rem;
+    }
+    .servicesSection {
+        width: 76%;
+    }
+    .bookServiceFlex {
+        display: block;
+    }
+    .form1,
+    .form2,
+    .form3,
+    .form4 {
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+    }
+    .form5 {
+        padding: 0.8rem 1.2rem;
+    }
+    .bookText {
+        padding: 3rem 1rem;
+        flex-basis: 50%;
+    }
+    .bookServiceFlex {
+        width: 70%;
+    }
+    .technicians {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .techSection {
+        width: 70%;
+    }
+    .subFooter {
+        width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mainFooter {
+        width: 70%;
+    }
+}
+@media (max-width: 950px) {
+    .container {
+        display: none;
+    }
+    .displayContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navMenuShow {
+        display: block;
+    }
+    .navMenuShow ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navMenu ul li {
+        padding: 0.4rem 0rem;
+        margin-left: 4rem;
+        list-style: none;
+        font-weight: 600;
+        color: #596277;
+        cursor: pointer;
+    }
+    .navMenu ul li:hover {
+        color: #d81324;
+    }
+    .counter {
+        height: auto;
+        padding: 2rem 0;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+@media (max-width: 850px) {
+    .servicesChoices {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .servicesChoices .services:nth-child(1) {
+        grid-column: 1/1;
+    }
+    .servicesIMG img {
+        height: auto;
+        aspect-ratio: 3/2;
+    }
+    .servicesTitle {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .services .service {
+        padding: 0.8rem 1rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    .services .service span {
+        font-size: 1.8rem;
+    }
+    .services .service h3 {
+        font-size: 1.4rem;
+    }
+    .aboutSection-text h2 {
+        margin: 1rem 0rem;
+    }
+    .aboutSection-text .expert {
+        margin-bottom: 1.8rem;
+    }
+    .abs-texts {
+        width: 30%;
+    }
+}
+@media (max-width: 774px) {
+    .carousel1 {
+        width: 90%;
+        height: 50vh;
+    }
+    .rightCarousel {
+        display: none;
+    }
+
+    .leftCarousel {
+        flex-basis: 75%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .leftCarousel h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+    .leftCarousel a {
+        font-size: 0.9.5rem;
+        padding: 0.8rem 1.8rem;
+    }
+    .parent-expert {
+        margin-bottom: 0rem;
+    }
+    .aboutSection-text h2 {
+        font-size: 1.7rem;
+    }
+    .about-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .abs-texts {
+        width: 25%;
+        padding: 1rem 1rem;
+    }
+    .serviceDescription h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    .serviceDescription > p {
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+    }
+    .serviceChecks {
+        margin-bottom: 1.2rem;
+    }
+    .serviceCheck {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.3rem;
+    }
+    .aboutSection-text p {
+        margin-bottom: 1rem;
+    }
+
+    .techSection > div {
+        margin-bottom: 1.5rem;
+    }
+    .techSection > div h4 {
+        margin-bottom: 0.4rem;
+        font-size: 0.95rem;
+    }
+    .techSection > div h2 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 612px) {
+    .displayContainer .logo {
+        margin-left: 1.5rem;
+    }
+    .displayContainer .menu {
+        margin-right: 1.5rem;
+    }
+    .carousel1 {
+        width: 90%;
+        height: 50vh;
+    }
+    .rightCarousel {
+        display: none;
+    }
+
+    .leftCarousel {
+        flex-basis: 65%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .leftCarousel h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .leftCarousel a {
+        font-size: 0.8rem;
+        padding: 0.7rem 1.5rem;
+    }
+    .counter {
+        height: auto;
+        padding: 2rem 0;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .services .service {
+        margin: 0rem 0rem 0.8rem 0rem;
+    }
+    .servicesTitle {
+        margin-bottom: 1.2rem;
+    }
+    .servicesTitle h4 {
+        color: #d81324;
+        margin-bottom: 0rem;
+    }
+    .servicesTitle h2 {
+        font-size: 1.8rem;
+    }
+    .services .service span {
+        font-size: 1.6rem;
+    }
+    .services .service h3 {
+        font-size: 1.3rem;
+    }
+    .abs-texts {
+        width: 30%;
+        padding: 0.7rem;
+    }
+    .form1,
+    .form2,
+    .form3,
+    .form4 {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.8rem;
+    }
+    .form5 {
+        padding: 0.5rem 0.9rem;
+    }
+    .bookForm h2 {
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+    .bookText h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .technicians {
+        grid-template-columns: 1fr;
+    }
+    .techSection {
+        width: 60%;
+    }
+    .subFooter {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mainFooter {
+        width: 90%;
+    }
+
+    .footerServices > h3 {
+        font-size: 1.3rem;
+    }
+    .openingHours > h3 {
+        font-size: 1.3rem;
+    }
+    .address h3 {
+        font-size: 1.3rem;
+    }
+    .newsLetter h3 {
+        font-size: 1.3rem;
+    }
+    .mainFooter {
+        font-size: 0.6rem;
+        gap: 2rem;
+    }
+}
+@media (max-width: 640px) {
+    .abs-texts {
+        width: 30%;
+        padding: 0.7rem;
+    }
+}
+@media (max-width: 495px) {
+    .abs-texts {
+        width: 35%;
+        padding: 0.7rem;
+    }
+    .address .contactInfo div span {
+        margin-right: 0rem;
+        font-size: 1.1rem;
+    }
+    .address .contactInfo div h5 {
+        margin-right: 0rem;
+        font-size: 0.7rem;
+    }
+    .openingHours div h4 {
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    .openingHours div p {
+        font-weight: 300;
+        font-size: 0.7rem;
+    }
+
+    .footerServices .servicesLink a {
+        font-size: 0.7rem;
+    }
+    .newsLetter p {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 470px) {
+    .abs-texts {
+        width: 38%;
+        padding: 0.7rem;
+    }
+    .form1,
+    .form2,
+    .form3,
+    .form4 {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.8rem;
+    }
+    .form5 {
+        padding: 0.5rem 0.4rem;
+    }
+    .bookForm {
+        margin: 0rem;
+        padding: 2rem;
+    }
+}
+/* Features */
+@media (max-width: 1360px) {
+    .features {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .feature-item p {
+        margin: 0.7rem 0rem;
+        font-size: 0.8rem;
+    }
+    .feature-item {
+        flex-grow: 1;
+        display: flex;
+        padding: 2.6rem 2rem;
+        min-width: 20.25rem;
+    }
+}
+@media (max-width: 698px) {
+    .features {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .feature-item {
+        flex-grow: 1;
+        display: flex;
+        padding: 1.5rem 2rem;
+        min-width: 18.25rem;
+    }
+    .feature-item h3 {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 380px) {
+    .features {
+        width: 50%;
+    }
+    .openingHours > h3 {
+        font-size: 1rem;
+    }
+    .address h3 {
+        font-size: 1rem;
+    }
+    .newsLetter h3 {
+        font-size: 1rem;
+    }
+    .footerServices > h3 {
+        font-size: 1rem;
+    }
+}
